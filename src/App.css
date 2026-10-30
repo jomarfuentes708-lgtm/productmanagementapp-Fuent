@@ -1,0 +1,192 @@
+:root {
+  --bg: #1a0f0a;
+  --panel: #2b1810;
+  --sidebar: #2b1810;
+  --sidebar-muted: #bcaaa4;
+  --primary: #ffb74d;
+  --primary-dark: #ffa726;
+  --success: #16a34a;
+  --danger: #d32f2f;
+  --warning: #f59e0b;
+  --text: #ffffff;
+  --text-soft: #d7ccc8;
+  --line: #3e2723;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Inter, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg);
+}
+
+.main-panel {
+  flex: 1;
+  width: 100%;
+  padding: 28px 40px 40px;
+}
+
+.navbar {
+  background: #2b1810;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.search-box {
+  background: #3e2723;
+  border: 1px solid #5d4037;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 230px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: #fff;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: #2b1810;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--primary-dark);
+}
+
+.product-list,
+.add-product {
+  background: #2b1810;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+.product-card {
+  background: #3e2723;
+  border: 1px solid #5d4037;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #fff;
+}
+
+:root {
+  --bg: #1a0f0a;
+  --panel: #2b1810;
+  --sidebar: #2b1810;
+  --sidebar-muted: #bcaaa4;
+  --primary: #ffb74d;
+  --primary-dark: #ffa726;
+  --success: #16a34a;
+  --danger: #d32f2f;
+  --warning: #f59e0b;
+  --text: #ffffff;
+  --text-soft: #d7ccc8;
+  --line: #3e2723;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Inter, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #1a0f0a;
+  box-sizing: border-box;
+}
+
+.main-content {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    margin: 10px 16px !important;
+    padding: 12px 16px !important;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  aside {
+    margin: 0 16px 20px 16px !important;
+    padding: 20px !important;
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+  }
+
+  aside > div:first-child {
+    max-width: 100% !important;
+  }
+
+  aside div img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .list-container, div[style*="padding"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}

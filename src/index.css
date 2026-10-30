@@ -1,0 +1,86 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: #1a0f0a;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  text-align: left;
+  border: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #1a0f0a;
+}
+
+:root {
+  --text: #d7ccc8;
+  --text-h: #ffffff;
+  --bg: #1a0f0a;
+  --border: #3e2723;
+  --code-bg: #2b1810;
+  --accent: #ffb74d;
+  --accent-bg: rgba(255, 183, 77, 0.1);
+  --accent-border: rgba(255, 183, 77, 0.5);
+  --shadow: rgba(0, 0, 0, 0.5) 0 10px 25px -3px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/145% var(--sans);
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: #1a0f0a;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0;
+}
